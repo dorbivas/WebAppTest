@@ -41,7 +41,7 @@ namespace WebAppTest.Controllers
         {
             _logger.LogInformation("CrawlController.GetDefault called");
 
-            var crawler = _crawlerFactory.CreateCrawler("helloworld");
+            var crawler = _crawlerFactory.CreateCrawler("kaki");
             var result = crawler.Crawl();
             _logger.LogInformation("Crawler result: {Result}", result);
             return Ok(result);
